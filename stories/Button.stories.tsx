@@ -1,9 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react-native-web-vite';
 
+import { Button } from '@/components/ui/button';
 import { View } from 'react-native';
 import { fn } from 'storybook/test';
 
-import { Button } from './Button';
+;
 
 const meta = {
   title: 'Example/Button',

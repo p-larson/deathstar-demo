@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/components/*": ["components/*"],
+      "@/src/*": ["src/*"],
+      "@/app/*": ["app/*"],
+      "@/lib/*": ["lib/*"],
+    },
+  },
+  "include": [
+    "../components",
+    "../src",
+    "../**/*.stories.ts",
+    "../**/*.stories.tsx",
+    "./**/*.ts",
+    "./**/*.tsx"
+  ]
+}
