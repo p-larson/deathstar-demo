@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "@/components/*": ["components/*"],
+      "@/src/*": ["src/*"],
+      "@/app/*": ["app/*"],
+      "@/lib/*": ["lib/*"],
+      "@/constants/*": ["constants/*"],
+    },
+  },
+  "include": ["src", "./.storybook", "./components", "./lib", "./app", "./constants"]
+}
