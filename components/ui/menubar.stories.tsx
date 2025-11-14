@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
-import { View } from "react-native";
+import { useState } from "react";
 import {
   Menubar,
   MenubarContent,
@@ -30,14 +30,15 @@ console.log({
   MenubarItem,
   MenubarSeparator,
   MenubarShortcut,
-})
+});
 
 type Story = StoryObj<typeof Menubar>;
 
 export const Default: Story = {
-  render: () => (
-    <View style={{ width: "100%", maxWidth: 600 }}>
-      <Menubar value="file" onValueChange={() => {}}>
+  render: function Render() {
+    const [value, setValue] = useState<string | undefined>();
+    return (
+      <Menubar value={value} onValueChange={setValue}>
         <MenubarMenu value="file">
           <MenubarTrigger>
             <Text>File</Text>
@@ -61,7 +62,6 @@ export const Default: Story = {
           </MenubarContent>
         </MenubarMenu>
       </Menubar>
-    </View>
-  ),
+    );
+  },
 };
-
