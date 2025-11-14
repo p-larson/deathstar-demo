@@ -1,4 +1,6 @@
+import { PortalHost } from '@rn-primitives/portal';
 import type { Preview } from '@storybook/react-vite';
+import React from 'react';
 import "../global.css";
 
 const preview: Preview = {
@@ -10,6 +12,14 @@ const preview: Preview = {
       },
     },
   },
+  decorators: [
+    (Story: React.ComponentType) => (
+      <>
+        <Story />
+        <PortalHost />
+      </>
+    ),
+  ]
 };
 
 export default preview;

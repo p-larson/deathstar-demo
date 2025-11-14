@@ -48,6 +48,7 @@ function Menubar({
     setValue(undefined);
   }
 
+  console.log('MenubarPrimitive.Root:', MenubarPrimitive.Root);
   return (
     <>
       {Platform.OS !== 'web' && (value || valueProp) ? (
@@ -360,5 +361,6 @@ export {
   MenubarSub,
   MenubarSubContent,
   MenubarSubTrigger,
-  MenubarTrigger,
+  MenubarTrigger
 };
+
