@@ -16,5 +16,6 @@ But then for @rn-primatives/menubar you can see it struggles to resolve the web 
 
 # expo demo
 Expo handles web as expected
+```npx expo start --web`
 <img width="1462" height="1136" alt="Screenshot 2025-11-14 at 12 57 55 PM" src="https://github.com/user-attachments/assets/34d95830-df3b-42c6-af67-77862bd4a80a" />
 <img width="1462" height="1136" alt="Screenshot 2025-11-14 at 12 57 49 PM" src="https://github.com/user-attachments/assets/a1c843ae-a9ed-40b6-9a5f-4bc277b181c2" />
