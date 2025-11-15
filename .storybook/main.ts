@@ -10,7 +10,6 @@ const config: StorybookConfig = {
   framework: {
     name: "@storybook/react-native-web-vite",
     options: {
-      modulesToTranspile: ["@rn-primitives"],
       pluginReactOptions: {
         jsxRuntime: "automatic",
         jsxImportSource: "nativewind",
@@ -24,36 +23,6 @@ const config: StorybookConfig = {
       },
     },
   },
-  // viteFinal: async (config) => {
-  //   const extensions = [
-  //     ".web.mjs",
-  //     ".web.js",
-  //     ".web.tsx",
-  //     ".web.ts",
-  //     ".web.jsx",
-  //     ".web.cjs",
-  //     ".mjs",
-  //     ".js",
-  //     ".ts",
-  //     ".tsx",
-  //     ".jsx",
-  //     ".cjs",
-  //     ".json",
-  //   ];
-
-  //   return mergeConfig(config, {
-  //     resolve: {
-  //       extensions,
-  //     },
-  //     optimizeDeps: {
-  //       esbuildOptions: {
-  //         jsx: "automatic",
-  //         jsxImportSource: "nativewind",
-  //         resolveExtensions: extensions,
-  //       },
-  //     },
-  //   } satisfies InlineConfig);
-  // },
 };
 
 export default config;
