@@ -1,5 +1,4 @@
 import type { StorybookConfig } from "@storybook/react-native-web-vite";
-import { InlineConfig, mergeConfig } from "vite";
 
 const config: StorybookConfig = {
   stories: [
@@ -24,36 +23,6 @@ const config: StorybookConfig = {
         },
       },
     },
-  },
-  viteFinal: async (config) => {
-    const extensions = [
-      ".web.mjs",
-      ".web.js",
-      ".web.tsx",
-      ".web.ts",
-      ".web.jsx",
-      ".web.cjs",
-      ".mjs",
-      ".js",
-      ".ts",
-      ".tsx",
-      ".jsx",
-      ".cjs",
-      ".json",
-    ];
-
-    return mergeConfig(config, {
-      resolve: {
-        extensions,
-      },
-      optimizeDeps: {
-        esbuildOptions: {
-          jsx: "automatic",
-          jsxImportSource: "nativewind",
-          resolveExtensions: extensions,
-        },
-      },
-    } satisfies InlineConfig);
   },
 };
 
