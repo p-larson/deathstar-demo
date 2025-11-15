@@ -48,6 +48,8 @@ const config: StorybookConfig = {
       },
       optimizeDeps: {
         esbuildOptions: {
+          jsx: "automatic",
+          jsxImportSource: "nativewind",
           resolveExtensions: extensions,
         },
       },
