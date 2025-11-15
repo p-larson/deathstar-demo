@@ -21,17 +21,6 @@ const meta: Meta<typeof Menubar> = {
 
 export default meta;
 
-console.log({
-  msg: "inspected imported components",
-  Menubar,
-  MenubarMenu,
-  MenubarTrigger,
-  MenubarContent,
-  MenubarItem,
-  MenubarSeparator,
-  MenubarShortcut,
-});
-
 type Story = StoryObj<typeof Menubar>;
 
 export const Default: Story = {
@@ -63,5 +52,5 @@ export const Default: Story = {
         </MenubarMenu>
       </Menubar>
     );
-  },
+  }, 
 };
