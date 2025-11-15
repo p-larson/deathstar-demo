@@ -2,7 +2,7 @@ import { TextClassContext } from '@/components/ui/text';
 import { cn } from '@/lib/utils';
 import * as Slot from '@rn-primitives/slot';
 import { cva, type VariantProps } from 'class-variance-authority';
-import { Platform, View, ViewProps } from 'react-native';
+import { Platform, View, type ViewProps } from 'react-native';
 
 const badgeVariants = cva(
   cn(
@@ -65,3 +65,4 @@ function Badge({ className, variant, asChild, ...props }: BadgeProps) {
 
 export { Badge, badgeTextVariants, badgeVariants };
 export type { BadgeProps };
+

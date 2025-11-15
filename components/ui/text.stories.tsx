@@ -18,7 +18,7 @@ const VARIANT_OPTIONS = [
 ] as const;
 
 const meta: Meta<typeof Text> = {
-  title: "Typography/Text",
+  title: "Components/Text",
   component: Text,
   parameters: {
     layout: "centered",
