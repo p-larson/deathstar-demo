@@ -16,8 +16,8 @@ export default function Home() {
       <Card>
         <CardHeader>
           <CardTitle>
-            <Text>
-              Current Balance
+            <Text variant="h3">
+              Rent
             </Text>
           </CardTitle>
           <CardDescription>

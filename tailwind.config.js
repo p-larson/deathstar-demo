@@ -17,6 +17,10 @@ module.exports = {
   presets: [require("nativewind/preset")],
   theme: {
     extend: {
+      fontFamily: {
+        'ibm-plex-sans': ['IBMPlexSans-Regular'],
+        'inter': ['Inter-Regular'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
