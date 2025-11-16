@@ -7,6 +7,7 @@ import '../global.css';
 
 import { useColorScheme } from '@/components/useColorScheme';
 import { useAppFonts } from '@/hooks/useAppFonts';
+import { I18nProvider, i18n } from '@/lib/i18n';
 import { PortalHost } from '@rn-primitives/portal';
 
 export {
@@ -47,12 +48,14 @@ function RootLayoutNav() {
   const colorScheme = useColorScheme();
 
   return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="modal" options={{ presentation: 'modal' }} />
-      </Stack>
-      <PortalHost />
-    </ThemeProvider>
+    <I18nProvider i18n={i18n}>
+      <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
+        <Stack>
+          <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+          <Stack.Screen name="modal" options={{ presentation: 'modal' }} />
+        </Stack>
+        <PortalHost />
+      </ThemeProvider>
+    </I18nProvider>
   );
 }

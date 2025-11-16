@@ -15,3 +15,11 @@ Based on @rn-primitives and react-native-reusables, and located in components/ui
 ## Expo
 
 This is meant to be an Expo managed workflow, where we let Expo manage ios/ or android/ files
+
+## Localization
+
+For all features, make sure that all of the strings are localized. This project uses linguini. We're seeking near 100% localization.
+
+## Accessibility
+
+This project should also aim to have all views be accessible and using translations where applicable.

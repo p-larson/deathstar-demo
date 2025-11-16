@@ -13,13 +13,14 @@ module.exports = {
     "./stories/**/*.{ts,tsx}",
     "./stories/*.{ts,tsx}",
     "./.storybook/**/*.{js,jsx,ts,tsx}",
+    "./.storybook/*.{js,jsx,ts,tsx}",
   ],
   presets: [require("nativewind/preset")],
   theme: {
     extend: {
       fontFamily: {
-        'ibm-plex-sans': ['IBMPlexSans-Regular'],
-        'inter': ['Inter-Regular'],
+        "ibm-plex-sans": ["IBMPlexSans-Regular"],
+        inter: ["Inter-Regular"],
       },
       colors: {
         border: "hsl(var(--border))",
