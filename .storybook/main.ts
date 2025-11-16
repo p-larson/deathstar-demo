@@ -8,6 +8,7 @@ const config: StorybookConfig = {
   framework: {
     name: "@storybook/react-native-web-vite",
     options: {
+      modulesToTranspile: ["@rn-primitives"],
       pluginReactOptions: {
         jsxRuntime: "automatic",
         jsxImportSource: "nativewind",

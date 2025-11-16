@@ -20,7 +20,8 @@
       "@/src/*": ["src/*"],
       "@/app/*": ["app/*"],
       "@/lib/*": ["lib/*"],
-      "@/constants/*": ["constants/*"]
+      "@/constants/*": ["constants/*"],
+      "@/hooks/*": ["hooks/*"]
     },
 
     "esModuleInterop": true,
