@@ -76,6 +76,7 @@
         "@storybook/addon-docs": "^10.0.6",
         "@storybook/addon-ondevice-actions": "^10.0.2",
         "@storybook/addon-ondevice-controls": "^10.0.2",
+        "@storybook/addon-themes": "^10.0.8",
         "@storybook/react-native": "^10.0.2",
         "@storybook/react-native-web-vite": "^10.0.6",
         "@types/react": "~19.1.0",
@@ -751,6 +752,8 @@
     "@storybook/addon-ondevice-actions": ["@storybook/addon-ondevice-actions@10.0.7", "", { "dependencies": { "fast-deep-equal": "^3.1.3" }, "peerDependencies": { "react": "*", "react-native": "*", "storybook": ">=10 || ^10" } }, "sha512-FYwH8gfJuwDY97SKCDGUHfz3Q2UY9wcAnlVm2jRtD/v5sx4X5gSLq85qjolBN8Fm3S1QZg4hqLrVedOT+kQpUg=="],
 
     "@storybook/addon-ondevice-controls": ["@storybook/addon-ondevice-controls@10.0.7", "", { "dependencies": { "@gorhom/portal": "^1.0.14", "@storybook/react-native-theming": "^10.0.7", "@storybook/react-native-ui-common": "^10.0.7", "polished": "^4.3.1", "react-native-modal-datetime-picker": "^18.0.0", "tinycolor2": "^1.6.0" }, "peerDependencies": { "@gorhom/bottom-sheet": ">=4", "@react-native-community/datetimepicker": "*", "@react-native-community/slider": "*", "react": "*", "react-native": "*", "storybook": ">=10 || ^10" }, "optionalPeers": ["@gorhom/bottom-sheet"] }, "sha512-wYSSjqTIU5syZ2hFvFJVUlT0plZhd1KvnNH2KYvIb8DNiXEuEZAzInKkJ7Q8rhRlc3HHeKLsQ1Ee9upFwBUerQ=="],
+
+    "@storybook/addon-themes": ["@storybook/addon-themes@10.0.8", "", { "dependencies": { "ts-dedent": "^2.0.0" }, "peerDependencies": { "storybook": "^10.0.8" } }, "sha512-rqESiwPfYClMSaeHIYxmAz6CR50dQTMCKa2mO8ZvEikdo1IBtzHJfmD9iAC6QQaFZSMG/17KVIWXJVjzWjLdfQ=="],
 
     "@storybook/builder-vite": ["@storybook/builder-vite@10.0.7", "", { "dependencies": { "@storybook/csf-plugin": "10.0.7", "ts-dedent": "^2.0.0" }, "peerDependencies": { "storybook": "^10.0.7", "vite": "^5.0.0 || ^6.0.0 || ^7.0.0" } }, "sha512-wk2TAoUY5+9t78GWVBndu9rEo9lo6Ec3SRrLT4VpIlcS2GPK+5f26UC2uvIBwOF/N7JrUUKq/zWDZ3m+do9QDg=="],
 

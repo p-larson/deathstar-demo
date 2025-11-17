@@ -87,6 +87,7 @@
     "@storybook/addon-docs": "^10.0.6",
     "@storybook/addon-ondevice-actions": "^10.0.2",
     "@storybook/addon-ondevice-controls": "^10.0.2",
+    "@storybook/addon-themes": "^10.0.8",
     "@storybook/react-native": "^10.0.2",
     "@storybook/react-native-web-vite": "^10.0.6",
     "@types/react": "~19.1.0",

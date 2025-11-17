@@ -1,4 +1,5 @@
 import { PortalHost } from '@rn-primitives/portal';
+import { withThemeByClassName } from '@storybook/addon-themes';
 import type { Preview } from '@storybook/react-vite';
 import React, { useEffect } from 'react';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
@@ -46,12 +47,19 @@ const preview: Preview = {
     },
   },
   decorators: [
+    withThemeByClassName({
+      themes: {
+        light: '',
+        dark: 'dark',
+      },
+      defaultTheme: 'light',
+    }),
     (Story: React.ComponentType, context: any)  => {
       const locale = context.globals.locale || 'en';
 
       useEffect(() => {
         i18n.activate(locale);
-      }, []);
+      }, [locale]);
 
       return (
         <I18nProvider i18n={i18n}>

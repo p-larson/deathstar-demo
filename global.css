@@ -1,6 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body,
+.sb-show-main,
+.sb-main-padded,
+#storybook-root,
+#storybook-root > div,
+[data-is-root-path="true"],
+.os-host,
+.os-host-textarea,
+.sb-story {
+  background-color: hsl(0 0% 100%) !important;
+}
+
+.dark body,
+.dark .sb-show-main,
+.dark .sb-main-padded,
+.dark #storybook-root,
+.dark #storybook-root > div,
+.dark [data-is-root-path="true"],
+.dark .os-host,
+.dark .os-host-textarea,
+.dark .sb-story {
+  background-color: hsl(0 0% 3.9%) !important;
+}
  
 @layer base {
   :root {

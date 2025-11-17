@@ -4,7 +4,9 @@ const config: StorybookConfig = {
   stories: [
     "../components/**/*.stories.@(js|jsx|mjs|ts|tsx)",
   ],
-  addons: [],
+  addons: [
+    "@storybook/addon-themes",
+  ],
   framework: {
     name: "@storybook/react-native-web-vite",
     options: {
